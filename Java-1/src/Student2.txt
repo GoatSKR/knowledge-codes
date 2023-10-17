@@ -5,8 +5,16 @@ Design and develop a menu-driven Student Management System for HitachiAcademy  .
 a)	Input details for each student (name, age, and scores).
 b)	Calculate and display the average score for each student.
 c)	Print the details of each student along with average score in the format given below. Example : Name : Nitin, Age : 25, Average Score : 89
-d)	Sorting: After collecting student details, sort the ArrayList of students based on their average scores in ascending or descending order.
-e)	Search: Implement a search functionality where the user can input a student's name, and the program should display the details of that student if found.
-f)	Updating Scores: Allow the user to update the scores of a specific student. After updating the scores, recalculate the average score and display it.
-g)	Remove Students: Implement the ability to remove a student from the ArrayList based on their name or other criteria. Name to be removed should be taken as input from user.
+d)	Sorting: After collecting student details,
+sort the ArrayList of students based on their average
+scores in ascending or descending order.
+e)	Search: Implement a search functionality where the
+user can input a student's name, and the program should
+display the details of that student if found.
+f)	Updating Scores: Allow the user to update the scores
+of a specific student. After updating the scores, recalculate
+the average score and display it.
+g)	Remove Students: Implement the ability to remove a student
+from the ArrayList based on their name or other criteria.
+Name to be removed should be taken as input from user.
 h)	Exit the program.

@@ -1,3 +1,4 @@
+import java.util.Comparator;
 import java.util.Scanner;
 
 class Student {
@@ -85,4 +86,6 @@ class Student {
         }
         return (double) sum / Scores.length;
     }
+
+
 }

@@ -1,4 +1,4 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Student2 {
     private String Name;
@@ -10,9 +10,14 @@ public class Student2 {
         this.Age = age;
         this.Scores = scores;
     }
+
+    public Student2() {
+
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        Student[] students = new Student[3];
+        Student2[] students = new Student2[3];
         System.out.println("Enter details of 3 students:");
 
         for (int i = 0; i < students.length; i++) {
@@ -28,14 +33,15 @@ public class Student2 {
                 System.out.print("Enter score for Subject " + (j + 1) + ": ");
                 scores[j] = scanner.nextInt();
             }
-            students[i] = new Student(name, age, scores);
+            students[i] = new Student2(name, age, scores);
         }
         boolean exit = false;
         while (!exit) {
             System.out.println("\n**********Student Management System*********:");
             System.out.println("1. Average score for each student");
             System.out.println("2. Details of each student");
-            System.out.println("3. Exit");
+            System.out.println("3. Sorting");
+            System.out.println("4. Exit");
             System.out.print("Enter your choice: ");
 
             int choice = scanner.nextInt();
@@ -54,6 +60,12 @@ public class Student2 {
                     }
                     break;
                 case 3:
+                    List<Student2> studentList = Arrays.asList(students); // Convert array to list
+                    Student2 studentInstance = new Student2(); // Create an instance
+                    studentInstance.aSorting(studentList);
+                    break;
+
+                case 4:
                     exit = true;
                     break;
                 default:
@@ -83,5 +95,13 @@ public class Student2 {
             sum += score;
         }
         return (double) sum / Scores.length;
+    }
+    public void aSorting(List<Student2> students){
+        Collections.sort(students, Comparator.comparingDouble(Student2::averageScore));
+        System.out.println("Students sorted in ascending order of average scores:");
+        for (Student2 student : students) {
+            System.out.println("Name: "+student.getName()+ ", Age: " +student.getAge()+", Average Marks: "+student.averageScore());
+        }
+
     }
 }
