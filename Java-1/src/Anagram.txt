@@ -1,0 +1,20 @@
+Concepts : Strings, Arrays.
+
+Write a Java program that checks if two input sentences are anagrams of
+each other. An anagram is a word or phrase formed by rearranging the
+letters of another word or phrase, using all the original letters
+exactly once. For this problem, consider spaces and punctuation marks.
+●	Prompt the user to enter two sentences (strings).
+●	Check if the two input sentences are anagrams of each other.
+●	Display the result, indicating whether the sentences are anagrams
+or not.
+
+The program should perform the following checks:
+●	Ignore spaces and punctuation marks (e.g., consider "Hello, world!" and "world, Hello!" as anagrams).
+●	Be case-insensitive (e.g., consider "Hello" and "hello" as anagrams).
+●	Consider sentences with the same words but in different orders as anagrams (e.g., "I am Sam" and "Sam I am" are anagrams).
+
+Sample Input and Output :
+Enter the first sentence: Listen, silent.
+Enter the second sentence: Listen Silent
+Result: The sentences are anagrams.

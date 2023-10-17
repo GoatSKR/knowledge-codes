@@ -1,0 +1,15 @@
+Design and develop a menu-driven Student Management System for
+HitachiAcademy. The Student Management System maintains student
+details such as name, age, and scores of students in 5 subjects.
+
+Perform the following tasks:
+1.	Create a parameterized constructor in the Student class to
+initialize the name, age, and scores attributes.
+2.	In the main method of the same class, create an array of
+Student objects to represent three students.
+3.	Implement a menu-driven system that allows the user to:
+a.	Input details for each student (name, age, and scores).
+b.	Calculate and display the average score for each student.
+c.	Print the details of each student along with the average
+score in the format: "Name: [Name], Age: [Age], Average Score: [Average Score]"
+d.	Exit the Program.

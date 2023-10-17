@@ -1,0 +1,5 @@
+Write a Java Program to Sort binary array in linear time.
+
+Sample :
+Input: 1 0 0 1 0 1 0 1 1 1 1 1 1 0 0 1 1 0 1 0 0
+Output: 0 0 0 0 0 0 0 0 0 1 1 1 1 1 1 1 1 1 1 1 1
