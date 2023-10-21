@@ -18,3 +18,20 @@ g)	Remove Students: Implement the ability to remove a student
 from the ArrayList based on their name or other criteria.
 Name to be removed should be taken as input from user.
 h)	Exit the program.
+
+
+
+
+
+
+
+    public static void removeStudentByName(List<Student2> students, String studentName) {
+        for (Student2 student : students) {
+            if (student.getName().equalsIgnoreCase(studentName)) {
+                students.remove(student);
+                System.out.println("Student " + studentName + " removed.");
+                return; // Student found and removed, exit the loop
+            }
+        }
+        System.out.println("Student not found.");
+    }
