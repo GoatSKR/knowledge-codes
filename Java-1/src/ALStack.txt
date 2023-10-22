@@ -1,0 +1,8 @@
+Design and develop and menu-driven Java application to create an
+Integer stack using an ArrayList with a fixed size of 10. Implement the
+below functionalities :
+1.	Push elements onto the stack.
+2.	Pop elements from the stack.
+3.	Check if the stack is empty.
+4.	Display its contents.
+5.	Exit the program.
