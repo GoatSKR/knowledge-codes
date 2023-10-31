@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SoleSphere - Find your footware</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/login.css">
+
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+     <!-- Fontawesome icon -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/fontawesome.min.css" integrity="sha512-cHxvm20nkjOUySu7jdwiUxgGy11vuVPE9YeK89geLMLMMEOcKFyS2i+8wo0FOwyQO/bL8Bvq1KMsqK4bbOsPnA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!--
+    - preload banner
+  -->
+  <link rel="preload" href="./assets/images/hero-banner.png" as="image">
+
+</head>
+
+  <body id="top">
+  <!--
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <div class="overlay" data-overlay></div>
+
+      <a href="./index.html" class="logo">
+        <h2 class="text">SoleSphere</h2>
+      </a>
+
+      <button class="nav-open-btn hide" data-nav-open-btn aria-label="Open Menu">
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <button class="nav-close-btn hide" data-nav-close-btn aria-label="Close Menu">
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <h2 class="text">SoleSphere</h2>
+        </a>
+
+        <ul class="navbar-list">
+
+
+        </ul>
+
+        <ul class="nav-action-list">
+
+          <li >
+            <li id="user" class="hide">
+              <a href="#" class="nav-action-btn tooltip">
+                <ion-icon name="person-outline" aria-hidden="true" id="person-icon" style="font-size: 3rem;"></ion-icon>
+
+                <div class="tooltiptext" id="userName"></div>
+              </a>
+            </li>
+            <li id="login-user" class="hide">
+              <a href="./login.html" class="nav-action-btn tooltip">
+                <ion-icon name="log-in-outline" aria-hidden="true" id="person-icon" style="font-size: 3rem;"></ion-icon>
+
+                <span class="nav-action-text">Login</span>
+                <div class="tooltiptext">Login</div>
+              </a>
+            </li>
+
+            <li id="wishlist" class="hide">
+              <a href="./wishlist.html" class="tooltip">
+              <button class="nav-action-btn">
+                <ion-icon name="heart-outline" aria-hidden="true" style="font-size: 3rem;"></ion-icon>
+
+                <span class="nav-action-text">Wishlist</span>
+
+                <data id="wl" class="nav-action-badge" value="5" aria-hidden="true" ><span id="wishlistBadgeId"></span></data>
+              </button>
+              <div class="tooltiptext">Wishlist</div>
+
+              </a>
+            </li>
+
+            <li id="basket" class="hide">
+              <a href="./cart.html" class="tooltip">
+              <button class="nav-action-btn">
+                <ion-icon name="bag-outline" aria-hidden="true" style="font-size: 3rem;"></ion-icon>
+
+                <data class="nav-action-text" value="318.00">Basket: <strong>$318.00</strong></data>
+
+                  <data id="cart" class="nav-action-badge" value="4" aria-hidden="true" ><span id="cartBadgeId"></span></data>
+              </button>
+              <div class="tooltiptext">Cart</div>
+              </a>
+            </li>
+
+            <li id="logout" class="hide">
+              <a href="#" class="nav-action-btn tooltip">
+               <ion-icon name="log-out-outline" aria-hidden="true" id="logout-icon" style="font-size: 3rem;"></ion-icon>
+
+                <span class="nav-action-text">Logout</span>
+                <div class="tooltiptext">Logout</div>
+              </a>
+            </li>
+
+
+        </ul>
+
+      </nav>
+
+    </div>
+  </header>
+     <div class="login" style="background-image: url('./assets/images/crop.png');width: 100%; height: 100vh;">
+    <div class="container1" id="container1">
+    <div class="form-container sign-up-container">
+        <form action="#">
+            <h1>Create Account</h1>
+            <div class="social-container">
+                <a href="#" class="social"><em class="fab fa-facebook-f"></em></a>
+                <a href="#" class="social"><em class="fab fa-google-plus-g"></em></a>
+                <a href="#" class="social"><em class="fab fa-linkedin-in"></em></a>
+            </div>
+            <span>or use your email for registration</span>
+            <!-- Write your registration form here with id = 'name1', email1, password1 and finally a Sign Up Button. -->
+        </form>
+    </div>
+
+    <div class="form-container sign-in-container">
+        <form action="#">
+            <h1>Sign in</h1>
+            <div class="social-container">
+                <a href="#" class="social"><em class="fab fa-facebook-f"></em></a>
+                <a href="#" class="social"><em class="fab fa-google-plus-g"></em></a>
+                <a href="#" class="social"><em class="fab fa-linkedin-in"></em></a>
+            </div>
+            <span>or use your account</span>
+            <input id="email2" type="email" placeholder="Email"/>
+            <input id="password2" type="password" placeholder="password"/>
+            <a href="#">Forgot your password?</a>
+            <button id="sign-in">Sign In</button>
+            <span id="error" class="hide error">Invalid Credentials</span>
+        </form>
+    </div>
+
+    <div class="overlay-container">
+        <div class="overlay1">
+            <div class="overlay-panel overlay-left">
+                <h1>Welcome Back</h1>
+                <p>
+                    To keep connected with us please login with your personal info
+                </p>
+                <button class="ghost" id="signIn">Sign In</button>
+            </div>
+            <div class="overlay-panel overlay-right">
+                <h1>Hello, Friend!</h1>
+                <p>Enter your personal details and start journey with us</p>
+                <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+        </div>
+    </div>
+ </div>
+</div>
+
+ <a href="#top" class="go-top-btn" data-go-top>
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./login.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
